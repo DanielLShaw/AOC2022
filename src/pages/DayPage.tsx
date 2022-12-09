@@ -1,5 +1,7 @@
 import Day1 from "../Days/1";
 import { useParams } from "react-router-dom";
+import Day2 from "../Days/2";
+import Day3 from "../Days/3";
 
 export default function DayPage() {
   const { day } = useParams();
@@ -7,6 +9,10 @@ export default function DayPage() {
   switch (day) {
     case "1":
       return <Day1 />;
+    case "2":
+      return <Day2 />;
+    case "3":
+      return <Day3 />;
     default:
       return <pre>I haven't answered this day yet! </pre>;
   }
