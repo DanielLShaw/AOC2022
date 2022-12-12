@@ -4,6 +4,7 @@ import Day2 from "../Days/2";
 import Day3 from "../Days/3";
 import Day4 from "../Days/4";
 import Day5 from "../Days/5";
+import Day6 from "../Days/6";
 
 export default function DayPage() {
   const { day } = useParams();
@@ -19,6 +20,8 @@ export default function DayPage() {
       return <Day4 />;
     case "5":
       return <Day5 />;
+    case "6":
+      return <Day6 />;
     default:
       return <pre>I haven't answered this day yet! </pre>;
   }
